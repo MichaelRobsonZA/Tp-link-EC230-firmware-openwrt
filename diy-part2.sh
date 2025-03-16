@@ -10,8 +10,8 @@
 # See /LICENSE for more information.
 #
 
-# Modify default IP
-sed -i 's/192.168.0.1/192.168.0.5/g' package/base-files/files/bin/config_generate
+# Change the IP address, add packages, etc.
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
